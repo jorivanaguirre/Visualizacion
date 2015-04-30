@@ -10,7 +10,7 @@
 <script>
   var width = 1280, height = 800;
   var c20 = d3.scale.category20();
-  var vertices = d3.range(5000).map(function(d) {
+  var vertices = d3.range(20).map(function(d) {
     return [Math.random() * width, Math.random() * height];
   });
   var voronoi = d3.geom.voronoi().clipExtent([[0, 0], [width, height]]);
